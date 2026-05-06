@@ -219,7 +219,7 @@ section { padding: 6rem 2rem; }
     text-transform: uppercase; color: var(--rust);
 }
 .activities-grid {
-    display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
 }
 .projects-grid {
     display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;
@@ -269,7 +269,7 @@ section { padding: 6rem 2rem; }
 }
 .activities-reflections {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 .projects-reflections {
