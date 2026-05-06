@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pana_BenchAdrian_CoursePortfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- NAV -->
+        <nav id="mainNav">
+        <div class="nav-brand">
+            <a href="#home">GEC6 · Art Appreciation</a>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#works" class="nav-link">Works</a></li>
+            <li><a href="#reflections" class="nav-link">Reflections</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        </nav>
+
+        <!-- HERO -->
+        <section class="hero" id="home">
+        <div class="hero-bg-circle"></div>
+        <div class="hero-content">
+            <div class="hero-tag">Course Portfolio · Final Output</div>
+            <h1>Art <em>Appreciation</em><br>Portfolio</h1>
+            <p class="hero-sub">A curated collection of artworks, reflections, and creative growth throughout the semester.</p>
+            <div class="hero-line"></div>
+            <div class="student-info">
+            <div class="info-pill">Name: <span>BENCH ADRIAN G. PANA</span></div>
+            <div class="info-pill">Course: <span>GEC6 – ART APPRECIATION</span></div>
+            <div class="info-pill">Semester: <span>A.Y. 2026</span></div>
+            </div>
+            <div class="hero-buttons">
+                <a href="#works" class="hero-btn hero-btn-primary">View My Works</a>
+                <a href="#about" class="hero-btn hero-btn-secondary">About Me</a>
+            </div>
+        </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about"><br>
+        <div class="container">
+            <div class="about-grid">
+            <div class="about-text reveal">
+                <p class="section-label">About Me</p>
+                <h2 class="section-title">The Artist<br>Behind the Work</h2>
+                <div class="divider"></div>
+                <p>Welcome to my Art Appreciation course portfolio. This collection reflects my journey in understanding and creating art, from learning foundational concepts to developing my own personal expression. Throughout the semester, I gained a deeper appreciation of how art communicates ideas, emotions, and perspectives.</p>
+                <p>I explored different media, techniques, and artistic traditions that shaped how I see and connect with the world around me. Each activity challenged me to think creatively that allows me to experiment and improve my skills.</p>
+                <p>Every piece in this portfolio represents a part of my growth through curiosity, challenges, and discovery. I invite you to explore my work and see how my understanding of art has developed over time.</p>
+            </div>
+            <div class="reveal">
+                <div class="about-portrait">
+                <div class="portrait-placeholder">
+                    <img src="Me.jpg" alt="Portrait of the student">
+                </div>
+                </div>
+                <ul class="socials" id="socials">
+                    <li><a href="https://www.facebook.com/KZLGamer.BA" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/bnchadrn_/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@bench_pana" target="_blank" class="social-link"><i class="fab fa-tiktok"></i></a></li>
+                    <li><a href="https://www.youtube.com/@KZLGamer" target="_blank" class="social-link"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            </div>
+        </div><br><br><br><br><br>
+        </section>
+
+        <!-- PORTFOLIO WORKS -->
+        <section class="portfolio-section" id="works"><br>
+        <div class="container">
+            <p class="section-label reveal">Portfolio Works</p>
+            <h2 class="section-title reveal">My Outputs</h2>
+            <div class="divider reveal"></div>
+            <div class="portfolio-grid reveal">
+                <div class="work-group">
+                    <div class="work-group-title">Activities</div>
+                    <div class="activities-grid" id="activitiesGrid"></div>
+                </div>
+                <div class="work-group">
+                    <div class="work-group-title">Projects</div>
+                    <div class="projects-grid" id="projectsGrid"></div>
+                </div>
+                <div class="work-group">
+                    <div class="work-group-title">Exam</div>
+                    <div class="exam-grid" id="examGrid"></div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- MODAL LIGHTBOX -->
+        <div id="modal" class="modal-backdrop">
+        <div class="modal-box">
+            <div class="modal-header">
+            <div>
+                <div class="modal-act-label" id="modalActLabel"></div>
+                <div class="modal-title" id="modalTitle"></div>
+            </div>
+            <button class="modal-close" id="modalClose">&#10005;</button>
+            </div>
+            <div class="slide-area" id="slideArea">
+            <button class="slide-nav slide-prev" id="slidePrev">&#8592;</button>
+            <img id="slideImg" src="" alt="Activity photo">
+            <button class="slide-nav slide-next" id="slideNext">&#8594;</button>
+            </div>
+            <div class="slide-footer">
+            <span class="slide-counter" id="slideCounter"></span>
+            </div>
+        </div>
+        </div>
+
+        <!-- REFLECTIONS -->
+        <section class="reflection-section" id="reflections"><br>
+        <div class="container">
+            <p class="section-label reveal">Reflections</p>
+            <h2 class="section-title reveal">Learning &amp; Insight</h2>
+            <div class="divider reveal"></div>
+            <div class="reflection-cards">
+                <div class="reflection-group">
+                    <div class="reflection-group-title">Activities</div>
+                    <div class="activities-reflections">
+                        <div class="reflection-card reveal">
+                            <div class="ref-activity">Activity 01</div>
+                            <div class="ref-title">Art Around Me: Reflection Check In</div>
+                            <div class="ref-body">I learned the types of art and the elements of art to be considered it as an art. I considered my photo as an art because of its neon light designs.</div>
+                            <div class="ref-date">January, 2026</div>
+                        </div>
+                        <div class="reflection-card reveal">
+                            <div class="ref-activity">Activity 02</div>
+                            <div class="ref-title">Interface Critique Assignment</div>
+                            <div class="ref-body">I learned how to critique the tiktok user interface and identify areas for improvement. I also gained insight into the importance of usability and accessibility in design.</div>
+                            <div class="ref-date">February, 2026</div>
+                        </div>
+                        <div class="reflection-card reveal">
+                            <div class="ref-activity">Activity 03</div>
+                            <div class="ref-title">Before and After: Exploring Photo Editing Techniques</div>
+                            <div class="ref-body">I've been a photo editor since I was in elementary school because it becomes my hobby, now I learned some new various photo editing techniques because of this activity. I also discovered the importance of maintaining image quality while making edits.</div>
+                            <div class="ref-date">March, 2026</div>
+                        </div>
+                        <div class="reflection-card reveal">
+                            <div class="ref-activity">Activity 04</div>
+                            <div class="ref-title">Generative Art: Explore and Create Digital Art with p5.js</div>
+                            <div class="ref-body">I learned how to use p5.js to create generative art and explore the possibilities of digital creativity. I had a lot of fun experimenting with code and seeing the results. I also encountered challenges because my laptop runs slowly so I've been having a problem everytime I run the code.</div>
+                            <div class="ref-date">March, 2026</div>
+                        </div>
+                        <div class="reflection-card reveal">
+                            <div class="ref-activity">Activity 05</div>
+                            <div class="ref-title">Responsive Design Test</div>
+                            <div class="ref-body">I learned the importance of responsive design and how to implement it effectively across different devices. I also enjoy the process of creating a website that looks great on all screen sizes. Also, I encountered the slow laptop issue again while working on this activity.</div>
+                            <div class="ref-date">March, 2026</div>
+                        </div>
+                        <div class="reflection-card reveal">
+                            <div class="ref-activity">Activity 06</div>
+                            <div class="ref-title">Mini Game World Concept</div>
+                            <div class="ref-body">I learned about game design principles and how to create engaging mini game worlds. So I created a simple pixel game concept which is inspired to the famous indie game created by the Polychroma Games, the "Until Then". I also enjoy making the pixel art of this activity using the Pixilart Website.</div>
+                            <div class="ref-date">April, 2026</div>
+                        </div>
+                        <div class="reflection-card reveal">
+                            <div class="ref-activity">Activity 07</div>
+                            <div class="ref-title">Filipino Digital Artist Profile Presentation</div>
+                            <div class="ref-body">I learned more about the background of Polychroma Games and the work of Filipino digital artists behind of this studio, and the unique perspectives they bring to the field.</div>
+                            <div class="ref-date">April, 2026</div>
+                        </div>
+                        <div class="reflection-card reveal">
+                            <div class="ref-activity">Activity 08</div>
+                            <div class="ref-title">Art in the Digital Age: A Reflection Paper</div>
+                            <div class="ref-body">I learned about the impact of digital technology on the art world and how it has transformed the way we create and consume art.</div>
+                            <div class="ref-date">April, 2026</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reflection-group">
+                    <div class="reflection-group-title">Projects</div>
+                    <div class="projects-reflections">
+                        <div class="reflection-card reveal">
+                            <div class="ref-activity">Prelim Project</div>
+                            <div class="ref-title">Art Through Time: Traditional and Digital</div>
+                            <div class="ref-body">I learned about the evolution of art from traditional to digital forms and how technology has influenced artistic expression. We worked together creating this art without encountering any major problems because it is easy to create using the Canva.</div>
+                            <div class="ref-date">February, 2026</div>
+                        </div>
+                        <div class="reflection-card reveal">
+                            <div class="ref-activity">Midterm Project</div>
+                            <div class="ref-title">Start Up Prototype</div>
+                            <div class="ref-body">I learned how to design and develop a basic startup prototype, focusing on user experience and functionality. I enjoy creating this prototype because it is one of my favorite activities in this subject but I faced some challenges on our groupmates. Majority of the work was created by myself because some of them doesn't cooperate on creating this project, they will only cooperate when the deadline is near.</div>
+                            <div class="ref-date">April, 2026</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reflection-group">
+                    <div class="reflection-group-title">Exam</div>
+                    <div class="exam-reflections">
+                        <div class="reflection-card reveal">
+                            <div class="ref-activity">Prelim Exam</div>
+                            <div class="ref-title">Digital Art and Design Magazine</div>
+                            <div class="ref-body">I learned about the principles of digital art and design and how to create compelling layouts for magazines. We encountered a challenges on creating this magazine, and that's the miscommunication of the whole class on our group chat that resulted a problem on creating this magazine exam.</div>
+                            <div class="ref-date">February, 2026</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="logo">Art Appreciation</div>
+            <p>GEC6 – Final Course Portfolio &nbsp;·&nbsp; Individual Output</p>
+        </footer>
+
+        <script>
+            // ══════════════════════════════════════════════════
+            //  ACTIVITIES — add your image paths in each photos[]
+            //  You can use relative paths like "img/photo1.jpg"
+            //  or paste full URLs from the web
+            // ══════════════════════════════════════════════════
+            const ACTIVITIES = [
+                {
+                    id: 1,
+                    label: 'Activity 01',
+                    title: 'Art Around Me: Reflection Check In',
+                    photos: ["Activity_1_(1).png", 
+                            "Activity_1_(2).png"]
+                },
+                {
+                    id: 2,
+                    label: 'Activity 02',
+                    title: 'Interface Critique Assignment',
+                    photos: ["Activity_2_(1).jfif", 
+                            "Activity_2_(2).png", 
+                            "Activity_2_(3).png",
+                            "Activity_2_(4).png"]
+                },
+                {
+                    id: 3,
+                    label: 'Activity 03',
+                    title: 'Before and After: Exploring Photo Editing Techniques',
+                    photos: ["Activity_3_(1).jpg",
+                            "Activity_3_(2).png",
+                            "Activity_3_(3).png",
+                            "Activity_3_(4).png",
+                            "Activity_3_(5).png",
+                            "Activity_3_(6).png"]
+                },
+                {
+                    id: 4,
+                    label: 'Activity 04',
+                    title: 'Generative Art: Explore and Create Digital Art with p5.js',
+                    photos: ["Activity_4_(1).png", 
+                            "https://editor.p5js.org/bapana/full/MUXj__lA6",
+                            "Activity_4_(2).png"]
+                },
+                {
+                    id: 5,
+                    label: 'Activity 05',
+                    title: 'Responsive Design Test',
+                    photos: ["Activity_5_(1).png", 
+                            "Activity_5_(2).png", 
+                            "Activity_5_(3).png", 
+                            "Activity_5_(4).png"]
+                },
+                {
+                    id: 6,
+                    label: 'Activity 06',
+                    title: 'Mini Game World Concept',
+                    photos: ["Activity_6_(1).jpg", 
+                            "Activity_6_(2).jpg", 
+                            "Activity_6_(3).png", 
+                            "Activity_6_(4).png", 
+                            "Activity_6_(5).png"]
+                },
+                {
+                    id: 7,
+                    label: 'Activity 07',
+                    title: 'Filipino Digital Artist Profile Presentation',
+                    photos: ["Activity_7_(1).png", 
+                            "Activity_7_(2).png", 
+                            "Activity_7_(3).png", 
+                            "Activity_7_(4).png",
+                            "Activity_7_(5).png",
+                            "Activity_7_(6).png",
+                            "Activity_7_(7).png"]
+                },
+                {
+                    id: 8,
+                    label: 'Activity 08',
+                    title: 'Art in the Digital Age: A Reflection Paper',
+                    photos: ["Activity_8_(1).png", 
+                            "Activity_8_(2).png"]
+                },
+                {
+                    id: 9,
+                    label: 'Prelim Project',
+                    title: 'Art Through Time: Traditional and Digital',
+                    photos: ["Project_1_(1).png", 
+                            "Project_1_(2).png"]
+               },
+                {
+                    id: 10,
+                    label: 'Midterm Project',
+                    title: 'Start Up Prototype',
+                    photos: ["Project_2_(1).png",
+                            "Project_2_(2).png",
+                            "Project_2_(3).png",
+                            "Project_2_(4).png",
+                            "Project_2_(5).png",
+                            "Project_2_(6).png",
+                            "Project_2_(7).png",
+                            "Project_2_(8).png",
+                            "Project_2_(9).png",
+                            "Project_2_(10).png",
+                            "Project_2_(11).png",
+                            "Project_2_(12).png",
+                            "Project_2_(13).png",
+                            "Project_2_(14).png",
+                            "Project_2_(15).png",
+                            "Project_2_(16).png",
+                            "Project_2_(17).png"]
+                },
+                {
+                    id: 11,
+                    label: 'Prelim Exam',
+                    title: 'Digital Art and Design Magazine',
+                    photos: ["Exam_(1).png", 
+                            "Exam_(2).png", 
+                            "Exam_(3).png", 
+                            "Exam_(4).png", 
+                            "Exam_(5).png", 
+                            "Exam_(6).png", 
+                            "Exam_(7).png", 
+                            "Exam_(8).png", 
+                            "Exam_(9).png", 
+                            "Exam_(10).png", 
+                            "Exam_(11).png", 
+                            "Exam_(12).png", 
+                            "Exam_(13).png", 
+                            "Exam_(14).png", 
+                            "Exam_(15).png",
+                            "Exam_(16).png",
+                            "Exam_(17).png"]
+                },
+            ];
+
+            let currentAct  = null;
+            let slideIndex  = 0;
+
+            // ── BUILD GRID CARDS ──
+            const activitiesGrid = document.getElementById('activitiesGrid');
+            const projectsGrid = document.getElementById('projectsGrid');
+            const examGrid = document.getElementById('examGrid');
+
+            ACTIVITIES.forEach((act) => {
+                const card = document.createElement('div');
+                card.className = 'work-item';
+                card.dataset.actId = act.id;
+
+                const firstPhoto = act.photos[0] || '';
+                const modalPhotosCount = act.photos.length > 0 ? act.photos.length - 1 : 0;
+                card.innerHTML = `
+                <div class="work-placeholder"><div class="work-placeholder-num">0${act.id}</div></div>
+                <div class="work-thumb">
+                    ${firstPhoto ? `<img src="${firstPhoto}" alt="${act.label} thumbnail">` : ''}
+                </div>
+                ${modalPhotosCount > 0 ? `<span class="photo-count-badge">${modalPhotosCount} photo${modalPhotosCount > 1 ? 's' : ''}</span>` : ''}
+                <div class="work-overlay">
+                    <div class="work-num">${act.label}</div>
+                    <div class="work-name">${act.title}</div>
+                </div>`;
+
+                if (modalPhotosCount > 0) card.classList.add('has-photos');
+                if (firstPhoto) card.classList.add('has-thumb');
+                card.addEventListener('click', () => openModal(act.id));
+
+                if (act.id <= 8) {
+                    activitiesGrid.appendChild(card);
+                } else if (act.id <= 10) {
+                    projectsGrid.appendChild(card);
+                } else {
+                    examGrid.appendChild(card);
+                }
+            });
+
+            // ── MODAL ──
+            const modal         = document.getElementById('modal');
+            const modalActLabel = document.getElementById('modalActLabel');
+            const modalTitleEl  = document.getElementById('modalTitle');
+            const modalClose    = document.getElementById('modalClose');
+            const slideArea     = document.getElementById('slideArea');
+            const slideImg      = document.getElementById('slideImg');
+            const slidePrev     = document.getElementById('slidePrev');
+            const slideNext     = document.getElementById('slideNext');
+            const slideCounter  = document.getElementById('slideCounter');
+
+            slideImg.addEventListener('load', () => {
+                const naturalWidth = slideImg.naturalWidth || 0;
+                const naturalHeight = slideImg.naturalHeight || 0;
+                slideArea.classList.toggle('landscape', naturalWidth >= naturalHeight);
+                slideArea.classList.toggle('portrait', naturalHeight > naturalWidth);
+            });
+
+            function openModal(id) {
+                currentAct = ACTIVITIES.find(a => a.id === id);
+                slideIndex = 0;
+                modalActLabel.textContent = currentAct.label;
+                modalTitleEl.textContent  = currentAct.title;
+                currentAct.slidePhotos = currentAct.photos.slice(1);
+
+                if (currentAct.slidePhotos.length === 0) {
+                slideArea.style.display = 'none';
+                slideCounter.textContent = 'No photos added yet';
+                } else {
+                slideArea.style.display = 'flex';
+                renderSlide();
+                }
+
+                modal.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeModal() {
+                modal.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+
+           function renderSlide() {
+    const photos = currentAct.slidePhotos;
+    const src = photos[slideIndex];
+    slideCounter.textContent = (slideIndex + 1) + ' / ' + photos.length;
+    slidePrev.disabled = slideIndex === 0;
+    slideNext.disabled = slideIndex === photos.length - 1;
+
+    // Check if the current slide is a URL (iframe embed) or an image
+    const isEmbed = src.startsWith('http://') || src.startsWith('https://');
+
+    // Remove any existing iframe
+    const existingIframe = slideArea.querySelector('iframe');
+    if (existingIframe) existingIframe.remove();
+
+    if (isEmbed) {
+        slideImg.style.display = 'none';
+        slideArea.classList.remove('landscape', 'portrait');
+        slideArea.classList.add('landscape'); // iframes look better in landscape
+
+        const iframe = document.createElement('iframe');
+        iframe.src = src;
+        iframe.style.cssText = 'width:100%; height:100%; min-height:480px; border:none; border-radius:8px;';
+        iframe.setAttribute('allowfullscreen', '');
+        iframe.setAttribute('loading', 'lazy');
+        // Insert iframe before the next button
+        slideArea.insertBefore(iframe, slideNext);
+    } else {
+        slideImg.style.display = '';
+        slideImg.src = src;
+    }
+}
+
+            slidePrev.addEventListener('click', () => { slideIndex--; renderSlide(); });
+            slideNext.addEventListener('click', () => { slideIndex++; renderSlide(); });
+            modalClose.addEventListener('click', closeModal);
+            modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+
+            document.addEventListener('keydown', e => {
+                if (!modal.classList.contains('open')) return;
+                if (e.key === 'Escape') closeModal();
+                if (e.key === 'ArrowLeft'  && !slidePrev.disabled) { slideIndex--; renderSlide(); }
+                if (e.key === 'ArrowRight' && !slideNext.disabled) { slideIndex++; renderSlide(); }
+            });
+
+            // ── HAMBURGER ──
+            const hamburger = document.getElementById('hamburger');
+            const navLinks  = document.getElementById('navLinks');
+            hamburger.addEventListener('click', () => {
+                const isOpen = navLinks.classList.toggle('open');
+                hamburger.classList.toggle('open', isOpen);
+                hamburger.setAttribute('aria-expanded', isOpen);
+                document.body.style.overflow = isOpen ? 'hidden' : '';
+            });
+            // close on link click
+            document.querySelectorAll('.nav-link').forEach(a => {
+                a.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                hamburger.classList.remove('open');
+                hamburger.setAttribute('aria-expanded', false);
+                document.body.style.overflow = '';
+                });
+            });
+            // close on outside tap
+            document.addEventListener('click', e => {
+                if (navLinks.classList.contains('open') &&
+                    !navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+                navLinks.classList.remove('open');
+                hamburger.classList.remove('open');
+                hamburger.setAttribute('aria-expanded', false);
+                document.body.style.overflow = '';
+                }
+            });
+
+            // ── SCROLL REVEAL ──
+            const reveals = document.querySelectorAll('.reveal');
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach((e, i) => {
+                if (e.isIntersecting) {
+                    e.target.style.transitionDelay = (i % 4) * 0.1 + 's';
+                    e.target.classList.add('visible');
+                }
+                });
+            }, { threshold: 0.12 });
+            reveals.forEach(r => io.observe(r));
+
+            document.querySelectorAll('a[href^="#"]').forEach(a => {
+                a.addEventListener('click', e => {
+                e.preventDefault();
+                document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        </script>
+    </body>
+</html>
+
