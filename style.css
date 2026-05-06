@@ -294,7 +294,7 @@ section { padding: 6rem 2rem; }
 .reflection-card:hover { box-shadow: 8px 8px 0 rgba(200,169,110,0.25); }
 .ref-activity { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--rust); margin-bottom: 0.75rem; }
 .ref-title { font-family: 'Playfair Display', serif; font-size: 1.2rem; margin-bottom: 1rem; }
-.ref-body { font-size: 0.88rem; color: #5a4e42; line-height: 1.75; font-style: italic; }
+.ref-body { font-size: 0.88rem; color: #726559; line-height: 1.75; font-style: italic; }
 .ref-date { margin-top: 1rem; font-size: 0.75rem; color: var(--warm); letter-spacing: 0.06em; }
 
 /* ── FOOTER ── */
